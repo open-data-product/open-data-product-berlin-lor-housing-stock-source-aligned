@@ -2,7 +2,7 @@
 id: berlin-lor-housing-stock-source-aligned
 name: Berlin LOR Housing Stock (source-aligned)
 metadata:
-  ownership: Open Lifeworlds
+  ownership: Open Data Product
   domain: statistics
   schema:
     - apartments: number of apartments
@@ -104,19 +104,19 @@ output_ports:
   - id: berlin-lor-housing-stock-csv
     metadata:
       name: Berlin LOR housing stock csv
-      author: Open Lifeworlds
-      url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-housing-stock/tree/main/data
+      author: Open Data Product
+      url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock/tree/main/data
       license: CC-BY-4.0
       updated: 2023-07-31
     files:
-      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/berlin-lor-housing-stock-2015-00/berlin-lor-housing-stock-2015-00.csv
-      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/berlin-lor-housing-stock-2016-00/berlin-lor-housing-stock-2016-00.csv
-      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/berlin-lor-housing-stock-2017-00/berlin-lor-housing-stock-2017-00.csv
-      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/berlin-lor-housing-stock-2018-00/berlin-lor-housing-stock-2018-00.csv
-      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/berlin-lor-housing-stock-2019-00/berlin-lor-housing-stock-2019-00.csv
-      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/berlin-lor-housing-stock-2020-00/berlin-lor-housing-stock-2020-00.csv
-      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/berlin-lor-housing-stock-2021-00/berlin-lor-housing-stock-2021-00.csv
-      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/berlin-lor-housing-stock-2022-00/berlin-lor-housing-stock-2022-00.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/main/data/berlin-lor-housing-stock-2015-00/berlin-lor-housing-stock-2015-00.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/main/data/berlin-lor-housing-stock-2016-00/berlin-lor-housing-stock-2016-00.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/main/data/berlin-lor-housing-stock-2017-00/berlin-lor-housing-stock-2017-00.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/main/data/berlin-lor-housing-stock-2018-00/berlin-lor-housing-stock-2018-00.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/main/data/berlin-lor-housing-stock-2019-00/berlin-lor-housing-stock-2019-00.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/main/data/berlin-lor-housing-stock-2020-00/berlin-lor-housing-stock-2020-00.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/main/data/berlin-lor-housing-stock-2021-00/berlin-lor-housing-stock-2021-00.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/main/data/berlin-lor-housing-stock-2022-00/berlin-lor-housing-stock-2022-00.csv
 metrics:
   - quality:
   - operational:
