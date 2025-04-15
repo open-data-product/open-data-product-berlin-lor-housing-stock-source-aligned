@@ -9,7 +9,6 @@ from lib.tracking_decorator import TrackingDecorator
 def convert_data_to_csv(source_path, results_path, clean=False, quiet=False):
     # Iterate over files
     for subdir, dirs, files in sorted(os.walk(source_path)):
-
         # Make results path
         subdir = subdir.replace(f"{source_path}/", "")
         os.makedirs(os.path.join(results_path, subdir), exist_ok=True)
@@ -43,23 +42,47 @@ def convert_file_to_csv(source_file_path, clean=False, quiet=False):
             dataframes = []
 
             if source_file_name.endswith(f"{year}-{half_year}"):
-
-                sheets = ["Tab. 7", "Tab. 8", "Tab. 9", "Tab. 10", "Tab. 11", "Tab. 12", "Tab. 13", "Tab. 14",
-                          "Tab. 15", "Tab. 16", "Tab. 17", "Tab. 18"]
+                sheets = [
+                    "Tab. 7",
+                    "Tab. 8",
+                    "Tab. 9",
+                    "Tab. 10",
+                    "Tab. 11",
+                    "Tab. 12",
+                    "Tab. 13",
+                    "Tab. 14",
+                    "Tab. 15",
+                    "Tab. 16",
+                    "Tab. 17",
+                    "Tab. 18",
+                ]
                 skiprows = 11
-                names = ["id", "name", "apartments", "apartments_with_1_room", "apartments_with_2_rooms",
-                         "apartments_with_3_rooms", "apartments_with_4_rooms", "apartments_with_5_rooms",
-                         "apartments_with_6_rooms", "_", "apartments_with_7_rooms_or_more", "apartments_rooms",
-                         "apartments_living_area",
-                         "residential_buildings", "residential_buildings_living_area",
-                         "residential_buildings_apartments",
-                         "residential_buildings_with_1_apartment", "residential_buildings_with_1_apartment_living_area",
-                         "residential_buildings_with_2_apartments",
-                         "residential_buildings_with_2_apartments_living_area",
-                         "residential_buildings_with_2_apartments_apartments",
-                         "residential_buildings_with_3_apartments",
-                         "residential_buildings_with_3_apartments_living_area",
-                         "residential_buildings_with_3_apartments_apartments"]
+                names = [
+                    "id",
+                    "name",
+                    "apartments",
+                    "apartments_with_1_room",
+                    "apartments_with_2_rooms",
+                    "apartments_with_3_rooms",
+                    "apartments_with_4_rooms",
+                    "apartments_with_5_rooms",
+                    "apartments_with_6_rooms",
+                    "_",
+                    "apartments_with_7_rooms_or_more",
+                    "apartments_rooms",
+                    "apartments_living_area",
+                    "residential_buildings",
+                    "residential_buildings_living_area",
+                    "residential_buildings_apartments",
+                    "residential_buildings_with_1_apartment",
+                    "residential_buildings_with_1_apartment_living_area",
+                    "residential_buildings_with_2_apartments",
+                    "residential_buildings_with_2_apartments_living_area",
+                    "residential_buildings_with_2_apartments_apartments",
+                    "residential_buildings_with_3_apartments",
+                    "residential_buildings_with_3_apartments_living_area",
+                    "residential_buildings_with_3_apartments_apartments",
+                ]
                 drop_columns = ["name", "_"]
             else:
                 sheets = []
@@ -70,8 +93,14 @@ def convert_file_to_csv(source_file_path, clean=False, quiet=False):
             # Iterate over sheets
             for sheet in sheets:
                 dataframes.append(
-                    pd.read_excel(source_file_path, engine=engine, sheet_name=sheet, skiprows=skiprows,
-                                  usecols=list(range(0, len(names))), names=names)
+                    pd.read_excel(
+                        source_file_path,
+                        engine=engine,
+                        sheet_name=sheet,
+                        skiprows=skiprows,
+                        usecols=list(range(0, len(names))),
+                        names=names,
+                    )
                     .drop(columns=drop_columns, errors="ignore")
                     .dropna()
                     .replace("–", 0)
@@ -80,7 +109,9 @@ def convert_file_to_csv(source_file_path, clean=False, quiet=False):
                 )
 
             # Concatenate data frames
-            dataframe = pd.concat([df.set_index("id") for df in dataframes], axis=0).reset_index()
+            dataframe = pd.concat(
+                [df.set_index("id") for df in dataframes], axis=0
+            ).reset_index()
 
             # Write csv file
             if dataframe.shape[0] > 0:

@@ -1,113 +1,146 @@
 ---
 id: berlin-lor-housing-stock-source-aligned
-name: Berlin LOR Housing Stock (source-aligned)
 metadata:
-  ownership: Open Data Product
-  domain: statistics
+  name: Berlin LOR Housing Stock (source-aligned)
+  owner: Open Data Product
+  description: Source-aligned data product providing Berlin LOR housing stock data
+  url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned
+  license: CC-BY 4.0
+  updated:
   schema:
-    - apartments: number of apartments
-    - apartments_with_1_room: number of apartments with 1 room
-    - apartments_with_2_rooms: number of apartments with 2 rooms
-    - apartments_with_3_rooms: number of apartments with 3 rooms
-    - apartments_with_4_rooms: number of apartments with 4 rooms
-    - apartments_with_5_rooms: number of apartments with 5 rooms
-    - apartments_with_6_rooms: number of apartments with 6 rooms
-    - apartments_with_7_rooms_or_more: number of apartments with 7 rooms or more
-    - apartments_rooms: number of rooms in apartments
-    - apartments_living_area: living area in apartments
-    - residential_buildings: number of residential buildings
-    - residential_buildings_living_area: living area in residential buildings
-    - residential_buildings_apartments: number of apartments in residential buildings
-    - residential_buildings_with_1_apartment: number of residential buildings with 1 apartment
-    - residential_buildings_with_1_apartment_living_area: living area of residential buildings with 1 apartment
-    - residential_buildings_with_2_apartments: number of residential buildings with 2 apartments
-    - residential_buildings_with_2_apartments_living_area: living area of residential buildings with 2 apartments
-    - residential_buildings_with_2_apartments_apartments: apartments in residential buildings with 2 apartments
-    - residential_buildings_with_3_apartments: number of residential buildings with 3 apartments
-    - residential_buildings_with_3_apartments_living_area: living area of residential buildings with 3 apartments
-    - residential_buildings_with_3_apartments_apartments: apartments in residential buildings with 3 apartments
-description: This data products provides Berlin housing stock data on different LOR hierarchy levels
+    - name: apartments
+      description: number of apartments
+    - name: apartments_with_1_room
+      description: number of apartments with 1 room
+    - name: apartments_with_2_rooms
+      description: number of apartments with 2 rooms
+    - name: apartments_with_3_rooms
+      description: number of apartments with 3 rooms
+    - name: apartments_with_4_rooms
+      description: number of apartments with 4 rooms
+    - name: apartments_with_5_rooms
+      description: number of apartments with 5 rooms
+    - name: apartments_with_6_rooms
+      description: number of apartments with 6 rooms
+    - name: apartments_with_7_rooms_or_more
+      description: number of apartments with 7 rooms or more
+    - name: apartments_rooms
+      description: number of rooms in apartments
+    - name: apartments_living_area
+      description: living area in apartments
+    - name: residential_buildings
+      description: number of residential buildings
+    - name: residential_buildings_living_area
+      description: living area in residential buildings
+    - name: residential_buildings_apartments
+      description: number of apartments in residential buildings
+    - name: residential_buildings_with_1_apartment
+      description: number of residential buildings with 1 apartment
+    - name: residential_buildings_with_1_apartment_living_area
+      description: living area of residential buildings with 1 apartment
+    - name: residential_buildings_with_2_apartments
+      description: number of residential buildings with 2 apartments
+    - name: residential_buildings_with_2_apartments_living_area
+      description: living area of residential buildings with 2 apartments
+    - name: residential_buildings_with_2_apartments_apartments
+      description: apartments in residential buildings with 2 apartments
+    - name: residential_buildings_with_3_apartments
+      description: number of residential buildings with 3 apartments
+    - name: residential_buildings_with_3_apartments_living_area
+      description: living area of residential buildings with 3 apartments
+    - name: residential_buildings_with_3_apartments_apartments
+      description: apartments in residential buildings with 3 apartments
 input_ports:
   - id: berlin-lor-housing-stock-2015-00
     metadata:
       name: Fortschreibung des Wohngebäude- und Wohnungsbestandes in Berlin 2015
-      author: Amt für Statistik Berlin-Brandenburg
+      owner: Amt für Statistik Berlin-Brandenburg
       url: https://www.statistik-berlin-brandenburg.de/f-i-1-j
       license: CC-BY-3.0-Namensnennung
       updated: 2016-07-20
+      schema: []
     files:
       - https://download.statistik-berlin-brandenburg.de/bd6c147896d2ff60/8bfec78484fb/SB_F01-01-00_2015j01_BE.xlsx
   - id: berlin-lor-housing-stock-2016-00
     metadata:
       name: Fortschreibung des Wohngebäude- und Wohnungsbestandes in Berlin 2016
-      author: Amt für Statistik Berlin-Brandenburg
+      owner: Amt für Statistik Berlin-Brandenburg
       url: https://www.statistik-berlin-brandenburg.de/f-i-1-j
       license: CC-BY-3.0-Namensnennung
       updated: 2017-06-23
+      schema: []
     files:
       - https://download.statistik-berlin-brandenburg.de/ab9a0827a25a2614/7fe2b662af68/SB_F01-01-00_2016j01_BE.xlsx
   - id: berlin-lor-housing-stock-2017-00
     metadata:
       name: Fortschreibung des Wohngebäude- und Wohnungsbestandes in Berlin 2017
-      author: Amt für Statistik Berlin-Brandenburg
+      owner: Amt für Statistik Berlin-Brandenburg
       url: https://www.statistik-berlin-brandenburg.de/f-i-1-j
       license: CC-BY-3.0-Namensnennung
       updated: 2018-06-21
+      schema: []
     files:
       - https://download.statistik-berlin-brandenburg.de/b3ee1cd3b49f141b/bb4d7164a0f2/SB_F01-01-00_2017j01_BE.xlsx
   - id: berlin-lor-housing-stock-2018-00
     metadata:
       name: Fortschreibung des Wohngebäude- und Wohnungsbestandes in Berlin 2018
-      author: Amt für Statistik Berlin-Brandenburg
+      owner: Amt für Statistik Berlin-Brandenburg
       url: https://www.statistik-berlin-brandenburg.de/f-i-1-j
       license: CC-BY-3.0-Namensnennung
       updated: 2019-06-28
+      schema: []
     files:
       - https://download.statistik-berlin-brandenburg.de/a557654b00a58fb3/32cd91bd73de/SB_F01-01-00_2018j01_BE.xlsx
   - id: berlin-lor-housing-stock-2019-00
     metadata:
       name: Fortschreibung des Wohngebäude- und Wohnungsbestandes in Berlin 2019
-      author: Amt für Statistik Berlin-Brandenburg
+      owner: Amt für Statistik Berlin-Brandenburg
       url: https://www.statistik-berlin-brandenburg.de/f-i-1-j
       license: CC-BY-3.0-Namensnennung
       updated: 2020-06-24
+      schema: []
     files:
       - https://download.statistik-berlin-brandenburg.de/fa35212b7514f205/fc5c0f8f8f61/SB_F01-01-00_2019j01_BE.xlsx
   - id: berlin-lor-housing-stock-2020-00
     metadata:
       name: Fortschreibung des Wohngebäude- und Wohnungsbestandes in Berlin 2020
-      author: Amt für Statistik Berlin-Brandenburg
+      owner: Amt für Statistik Berlin-Brandenburg
       url: https://www.statistik-berlin-brandenburg.de/f-i-1-j
       license: CC-BY-3.0-Namensnennung
       updated: 2021-07-06
+      schema: []
     files:
       - https://download.statistik-berlin-brandenburg.de/6fe3f8c8d2c5c55a/d044eff304e4/SB_F01-01-00_2020j01_BE.xlsx
   - id: berlin-lor-housing-stock-2021-00
     metadata:
       name: Fortschreibung des Wohngebäude- und Wohnungsbestandes in Berlin 2021
-      author: Amt für Statistik Berlin-Brandenburg
+      owner: Amt für Statistik Berlin-Brandenburg
       url: https://www.statistik-berlin-brandenburg.de/f-i-1-j
       license: CC-BY-3.0-Namensnennung
       updated: 2022-07-12
+      schema: []
     files:
-      - https://download.statistik-berlin-brandenburg.de/490e783d37fff6c7/245ef1180cd8/SB_F01-01-00_2021j01_BE.xlsx
+      - https://download.statistik-berlin-brandenburg.de/490e783d37fff6c7/66730a658f1f/SB_F01-01-00_2021j01_BE.xlsx
   - id: berlin-lor-housing-stock-2022-00
     metadata:
       name: Fortschreibung des Wohngebäude- und Wohnungsbestandes in Berlin 2022
-      author: Amt für Statistik Berlin-Brandenburg
+      owner: Amt für Statistik Berlin-Brandenburg
       url: https://www.statistik-berlin-brandenburg.de/f-i-1-j
       license: CC-BY-3.0-Namensnennung
       updated: 2023-07-18
+      schema: []
     files:
-      - https://download.statistik-berlin-brandenburg.de/fc2a6d8be1b10993/a2816dc7fb02/SB_F01-01-00_2022j01_BE.xlsx
+      - https://download.statistik-berlin-brandenburg.de/fc2a6d8be1b10993/3ed7d165d79a/SB_F01-01-00_2022j01_BE.xlsx
+transformation_steps: []
 output_ports:
   - id: berlin-lor-housing-stock-csv
     metadata:
       name: Berlin LOR housing stock csv
-      author: Open Data Product
+      owner: Open Data Product
       url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock/tree/main/data
       license: CC-BY-4.0
       updated: 2023-07-31
+      schema: []
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/main/data/berlin-lor-housing-stock-2015-00/berlin-lor-housing-stock-2015-00.csv
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/main/data/berlin-lor-housing-stock-2016-00/berlin-lor-housing-stock-2016-00.csv
@@ -117,10 +150,15 @@ output_ports:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/main/data/berlin-lor-housing-stock-2020-00/berlin-lor-housing-stock-2020-00.csv
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/main/data/berlin-lor-housing-stock-2021-00/berlin-lor-housing-stock-2021-00.csv
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/main/data/berlin-lor-housing-stock-2022-00/berlin-lor-housing-stock-2022-00.csv
-metrics:
-  - quality:
-  - operational:
+observability:
+  quality:
+  operational:
+  slas:
+  security:
+consumers:
+use_cases:
 classification: source-aligned
+ubiquitous_language:
 tags:
   - berlin
   - lor
