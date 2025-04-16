@@ -1,0 +1,11 @@
+id,apartments,rooms,rooms_per_apartment,living_area,living_area_per_apartment
+,Wohnungen¹,Räume,,Wohnfläche,
+,insgesamt,insgesamt,je Wohnung,insgesamt,je Wohnung
+,Anzahl,,,100 m²,m²
+01,205703,637575,3.1,138249,67.2
+,156661,489805,3.1,107966,68.9
+03,223923,767407,3.4,163771,73.1
+,189119,653015,3.5,148840,78.7
+05,123361,443222,3.6,91683,74.3
+06,159228,610829,3.8,135976,85.4
+,185385,638046,3.4,139028,75

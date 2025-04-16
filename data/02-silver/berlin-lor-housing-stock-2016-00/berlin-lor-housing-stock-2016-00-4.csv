@@ -1,0 +1,12 @@
+district_name,apartments,rooms,rooms_per_apartment,living_area,living_area_per_apartment
+Mitte,194023,610029,3.1,130770,67.4
+Friedrichshain-Kreuzberg,150177,472688,3.1,103316,68.8
+Pankow,214136,739065,3.5,156067,72.9
+Charlottenburg-Wilmersdorf,183897,638544,3.5,144318,78.5
+Spandau,118602,428304,3.6,87802,74
+Steglitz-Zehlendorf,156696,602703,3.8,133722,85.3
+Tempelhof-Schöneberg,181149,626229,3.5,135743,74.9
+Neukölln,162842,534929,3.3,113578,69.7
+Treptow-Köpenick,138723,495216,3.6,101135,72.9
+Marzahn-Hellersdorf,134887,503176,3.7,96476,71.5
+Lichtenberg,150845,525156,3.5,99255,65.8

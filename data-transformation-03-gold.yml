@@ -1,0 +1,3442 @@
+---
+input_ports:
+  - id: berlin-lor-housing-stock-2015-00
+    files:
+      - source_file_name: berlin-lor-housing-stock-2015-00-2.csv
+        target_file_name: berlin-lor-housing-stock-2015-00-2-districts.csv
+        names:
+          - name: id
+            action: "mapping"
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichsh.-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenb.-Wilmersd.": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelh.-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendorf": "12"
+          - { name: district_name, action: "remove" }
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_or_more_rooms
+          - name: rooms
+          - name: apartments_living_area
+          - name: non_residential_building_apartments
+          - name: non_residential_building_living_area
+      - source_file_name: berlin-lor-housing-stock-2015-00-4.csv
+        target_file_name: berlin-lor-housing-stock-2015-00-4-districts.csv
+        names:
+          - name: id
+            action: "mapping"
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichsh.-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenb.-Wilmersd.": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelh.-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendorf": "12"
+          - { name: district_name, action: "remove" }
+          - name: apartments
+          - name: rooms
+          - name: rooms_per_apartment
+          - name: living_area
+          - name: living_area_per_apartment
+      - source_file_name: berlin-lor-housing-stock-2015-00-6.csv
+        target_file_name: berlin-lor-housing-stock-2015-00-6-districts.csv
+        names:
+          - name: id
+            action: "mapping"
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichsh.-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenb.-Wilmersd.": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelh.-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendorf": "12"
+          - { name: district_name, action: "remove" }
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+          - name: dormitories
+          - name: dormitories_living_area
+          - name: dormitories_apartments
+      - source_file_name: berlin-lor-housing-stock-2015-00-7.csv
+        target_file_name: berlin-lor-housing-stock-2015-00-7-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2015-00-8.csv
+        target_file_name: berlin-lor-housing-stock-2015-00-8-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2015-00-9.csv
+        target_file_name: berlin-lor-housing-stock-2015-00-9-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2015-00-10.csv
+        target_file_name: berlin-lor-housing-stock-2015-00-10-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2015-00-11.csv
+        target_file_name: berlin-lor-housing-stock-2015-00-11-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2015-00-12.csv
+        target_file_name: berlin-lor-housing-stock-2015-00-12-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2015-00-13.csv
+        target_file_name: berlin-lor-housing-stock-2015-00-13-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2015-00-14.csv
+        target_file_name: berlin-lor-housing-stock-2015-00-14-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2015-00-15.csv
+        target_file_name: berlin-lor-housing-stock-2015-00-15-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2015-00-16.csv
+        target_file_name: berlin-lor-housing-stock-2015-00-16-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2015-00-17.csv
+        target_file_name: berlin-lor-housing-stock-2015-00-17-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2015-00-18.csv
+        target_file_name: berlin-lor-housing-stock-2015-00-18-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+  - id: berlin-lor-housing-stock-2016-00
+    files:
+      - source_file_name: berlin-lor-housing-stock-2016-00-2.csv
+        target_file_name: berlin-lor-housing-stock-2016-00-2-districts.csv
+        names:
+          - name: id
+            action: "mapping"
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichsh.-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenb.-Wilmersd.": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelh.-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendorf": "12"
+          - { name: district_name, action: "remove" }
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_or_more_rooms
+          - name: rooms
+          - name: apartments_living_area
+          - name: non_residential_building_apartments
+          - name: non_residential_building_living_area
+      - source_file_name: berlin-lor-housing-stock-2016-00-4.csv
+        target_file_name: berlin-lor-housing-stock-2016-00-4-districts.csv
+        names:
+          - name: id
+            action: "mapping"
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichsh.-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenb.-Wilmersd.": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelh.-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendorf": "12"
+          - { name: district_name, action: "remove" }
+          - name: apartments
+          - name: rooms
+          - name: rooms_per_apartment
+          - name: living_area
+          - name: living_area_per_apartment
+      - source_file_name: berlin-lor-housing-stock-2016-00-6.csv
+        target_file_name: berlin-lor-housing-stock-2016-00-6-districts.csv
+        names:
+          - name: id
+            action: "mapping"
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichsh.-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenb.-Wilmersd.": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelh.-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendorf": "12"
+          - { name: district_name, action: "remove" }
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+          - name: dormitories
+          - name: dormitories_living_area
+          - name: dormitories_apartments
+      - source_file_name: berlin-lor-housing-stock-2016-00-7.csv
+        target_file_name: berlin-lor-housing-stock-2016-00-7-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2016-00-8.csv
+        target_file_name: berlin-lor-housing-stock-2016-00-8-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2016-00-9.csv
+        target_file_name: berlin-lor-housing-stock-2016-00-9-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2016-00-10.csv
+        target_file_name: berlin-lor-housing-stock-2016-00-10-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2016-00-11.csv
+        target_file_name: berlin-lor-housing-stock-2016-00-11-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2016-00-12.csv
+        target_file_name: berlin-lor-housing-stock-2016-00-12-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2016-00-13.csv
+        target_file_name: berlin-lor-housing-stock-2016-00-13-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2016-00-14.csv
+        target_file_name: berlin-lor-housing-stock-2016-00-14-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2016-00-15.csv
+        target_file_name: berlin-lor-housing-stock-2016-00-15-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2016-00-16.csv
+        target_file_name: berlin-lor-housing-stock-2016-00-16-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2016-00-17.csv
+        target_file_name: berlin-lor-housing-stock-2016-00-17-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2016-00-18.csv
+        target_file_name: berlin-lor-housing-stock-2016-00-18-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+  - id: berlin-lor-housing-stock-2017-00
+    files:
+      - source_file_name: berlin-lor-housing-stock-2017-00-2.csv
+        target_file_name: berlin-lor-housing-stock-2017-00-2-districts.csv
+        names:
+          - name: id
+            action: "mapping"
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichsh.-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenb.-Wilmersd.": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelh.-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendorf": "12"
+          - { name: district_name, action: "remove" }
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_or_more_rooms
+          - name: rooms
+          - name: apartments_living_area
+          - name: non_residential_building_apartments
+          - name: non_residential_building_living_area
+      - source_file_name: berlin-lor-housing-stock-2017-00-4.csv
+        target_file_name: berlin-lor-housing-stock-2017-00-4-districts.csv
+        names:
+          - name: id
+            action: "mapping"
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichsh.-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenb.-Wilmersd.": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelh.-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendorf": "12"
+          - { name: district_name, action: "remove" }
+          - name: apartments
+          - name: rooms
+          - name: rooms_per_apartment
+          - name: living_area
+          - name: living_area_per_apartment
+      - source_file_name: berlin-lor-housing-stock-2017-00-6.csv
+        target_file_name: berlin-lor-housing-stock-2017-00-6-districts.csv
+        names:
+          - name: id
+            action: "mapping"
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichsh.-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenb.-Wilmersd.": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelh.-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendorf": "12"
+          - { name: district_name, action: "remove" }
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+          - name: dormitories
+          - name: dormitories_living_area
+          - name: dormitories_apartments
+      - source_file_name: berlin-lor-housing-stock-2017-00-7.csv
+        target_file_name: berlin-lor-housing-stock-2017-00-7-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2017-00-8.csv
+        target_file_name: berlin-lor-housing-stock-2017-00-8-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2017-00-9.csv
+        target_file_name: berlin-lor-housing-stock-2017-00-9-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2017-00-10.csv
+        target_file_name: berlin-lor-housing-stock-2017-00-10-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2017-00-11.csv
+        target_file_name: berlin-lor-housing-stock-2017-00-11-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2017-00-12.csv
+        target_file_name: berlin-lor-housing-stock-2017-00-12-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2017-00-13.csv
+        target_file_name: berlin-lor-housing-stock-2017-00-13-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2017-00-14.csv
+        target_file_name: berlin-lor-housing-stock-2017-00-14-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2017-00-15.csv
+        target_file_name: berlin-lor-housing-stock-2017-00-15-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2017-00-16.csv
+        target_file_name: berlin-lor-housing-stock-2017-00-16-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2017-00-17.csv
+        target_file_name: berlin-lor-housing-stock-2017-00-17-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2017-00-18.csv
+        target_file_name: berlin-lor-housing-stock-2017-00-18-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+  - id: berlin-lor-housing-stock-2018-00
+    files:
+      - source_file_name: berlin-lor-housing-stock-2018-00-2.csv
+        target_file_name: berlin-lor-housing-stock-2018-00-2-districts.csv
+        names:
+          - name: id
+            action: "mapping"
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichsh.-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenb.-Wilmersd.": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelh.-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendorf": "12"
+          - { name: district_name, action: "remove" }
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_or_more_rooms
+          - name: rooms
+          - name: apartments_living_area
+          - name: non_residential_building_apartments
+          - name: non_residential_building_living_area
+      - source_file_name: berlin-lor-housing-stock-2018-00-4.csv
+        target_file_name: berlin-lor-housing-stock-2018-00-4-districts.csv
+        names:
+          - name: id
+            action: "mapping"
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichsh.-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenb.-Wilmersd.": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelh.-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendorf": "12"
+          - { name: district_name, action: "remove" }
+          - name: apartments
+          - name: rooms
+          - name: rooms_per_apartment
+          - name: living_area
+          - name: living_area_per_apartment
+      - source_file_name: berlin-lor-housing-stock-2018-00-6.csv
+        target_file_name: berlin-lor-housing-stock-2018-00-6-districts.csv
+        names:
+          - name: id
+            action: "mapping"
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichsh.-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenb.-Wilmersd.": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelh.-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendorf": "12"
+          - { name: district_name, action: "remove" }
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+          - name: dormitories
+          - name: dormitories_living_area
+          - name: dormitories_apartments
+      - source_file_name: berlin-lor-housing-stock-2018-00-7.csv
+        target_file_name: berlin-lor-housing-stock-2018-00-7-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2018-00-8.csv
+        target_file_name: berlin-lor-housing-stock-2018-00-8-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2018-00-9.csv
+        target_file_name: berlin-lor-housing-stock-2018-00-9-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2018-00-10.csv
+        target_file_name: berlin-lor-housing-stock-2018-00-10-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2018-00-11.csv
+        target_file_name: berlin-lor-housing-stock-2018-00-11-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2018-00-12.csv
+        target_file_name: berlin-lor-housing-stock-2018-00-12-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2018-00-13.csv
+        target_file_name: berlin-lor-housing-stock-2018-00-13-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2018-00-14.csv
+        target_file_name: berlin-lor-housing-stock-2018-00-14-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2018-00-15.csv
+        target_file_name: berlin-lor-housing-stock-2018-00-15-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2018-00-16.csv
+        target_file_name: berlin-lor-housing-stock-2018-00-16-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2018-00-17.csv
+        target_file_name: berlin-lor-housing-stock-2018-00-17-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2018-00-18.csv
+        target_file_name: berlin-lor-housing-stock-2018-00-18-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+  - id: berlin-lor-housing-stock-2019-00
+    files:
+      - source_file_name: berlin-lor-housing-stock-2019-00-2.csv
+        target_file_name: berlin-lor-housing-stock-2019-00-2-districts.csv
+        names:
+          - name: id
+            action: "mapping"
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichsh.-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenb.-Wilmersd.": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelh.-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendorf": "12"
+          - { name: district_name, action: "remove" }
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_or_more_rooms
+          - name: rooms
+          - name: apartments_living_area
+          - name: non_residential_building_apartments
+          - name: non_residential_building_living_area
+      - source_file_name: berlin-lor-housing-stock-2019-00-4.csv
+        target_file_name: berlin-lor-housing-stock-2019-00-4-districts.csv
+        names:
+          - name: id
+            action: "mapping"
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichsh.-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenb.-Wilmersd.": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelh.-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendorf": "12"
+          - { name: district_name, action: "remove" }
+          - name: apartments
+          - name: rooms
+          - name: rooms_per_apartment
+          - name: living_area
+          - name: living_area_per_apartment
+      - source_file_name: berlin-lor-housing-stock-2019-00-6.csv
+        target_file_name: berlin-lor-housing-stock-2019-00-6-districts.csv
+        names:
+          - name: id
+            action: "mapping"
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichsh.-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenb.-Wilmersd.": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelh.-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendorf": "12"
+          - { name: district_name, action: "remove" }
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+          - name: dormitories
+          - name: dormitories_living_area
+          - name: dormitories_apartments
+      - source_file_name: berlin-lor-housing-stock-2019-00-7.csv
+        target_file_name: berlin-lor-housing-stock-2019-00-7-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2019-00-8.csv
+        target_file_name: berlin-lor-housing-stock-2019-00-8-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2019-00-9.csv
+        target_file_name: berlin-lor-housing-stock-2019-00-9-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2019-00-10.csv
+        target_file_name: berlin-lor-housing-stock-2019-00-10-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2019-00-11.csv
+        target_file_name: berlin-lor-housing-stock-2019-00-11-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2019-00-12.csv
+        target_file_name: berlin-lor-housing-stock-2019-00-12-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2019-00-13.csv
+        target_file_name: berlin-lor-housing-stock-2019-00-13-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2019-00-14.csv
+        target_file_name: berlin-lor-housing-stock-2019-00-14-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2019-00-15.csv
+        target_file_name: berlin-lor-housing-stock-2019-00-15-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2019-00-16.csv
+        target_file_name: berlin-lor-housing-stock-2019-00-16-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2019-00-17.csv
+        target_file_name: berlin-lor-housing-stock-2019-00-17-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2019-00-18.csv
+        target_file_name: berlin-lor-housing-stock-2019-00-18-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+  - id: berlin-lor-housing-stock-2020-00
+    files:
+      - source_file_name: berlin-lor-housing-stock-2020-00-2.csv
+        target_file_name: berlin-lor-housing-stock-2020-00-2-districts.csv
+        names:
+          - name: id
+            action: "mapping"
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichsh.-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenb.-Wilmersd.": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelh.-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendorf": "12"
+          - { name: district_name, action: "remove" }
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_or_more_rooms
+          - name: rooms
+          - name: apartments_living_area
+          - name: non_residential_building_apartments
+          - name: non_residential_building_living_area
+      - source_file_name: berlin-lor-housing-stock-2020-00-4.csv
+        target_file_name: berlin-lor-housing-stock-2020-00-4-districts.csv
+        names:
+          - name: id
+            action: "mapping"
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichsh.-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenb.-Wilmersd.": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelh.-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendorf": "12"
+          - { name: district_name, action: "remove" }
+          - name: apartments
+          - name: rooms
+          - name: rooms_per_apartment
+          - name: living_area
+          - name: living_area_per_apartment
+      - source_file_name: berlin-lor-housing-stock-2020-00-6.csv
+        target_file_name: berlin-lor-housing-stock-2020-00-6-districts.csv
+        names:
+          - name: id
+            action: "mapping"
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichsh.-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenb.-Wilmersd.": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelh.-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendorf": "12"
+          - { name: district_name, action: "remove" }
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+          - name: dormitories
+          - name: dormitories_living_area
+          - name: dormitories_apartments
+      - source_file_name: berlin-lor-housing-stock-2020-00-7.csv
+        target_file_name: berlin-lor-housing-stock-2020-00-7-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2020-00-8.csv
+        target_file_name: berlin-lor-housing-stock-2020-00-8-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2020-00-9.csv
+        target_file_name: berlin-lor-housing-stock-2020-00-9-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2020-00-10.csv
+        target_file_name: berlin-lor-housing-stock-2020-00-10-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2020-00-11.csv
+        target_file_name: berlin-lor-housing-stock-2020-00-11-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2020-00-12.csv
+        target_file_name: berlin-lor-housing-stock-2020-00-12-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2020-00-13.csv
+        target_file_name: berlin-lor-housing-stock-2020-00-13-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2020-00-14.csv
+        target_file_name: berlin-lor-housing-stock-2020-00-14-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2020-00-15.csv
+        target_file_name: berlin-lor-housing-stock-2020-00-15-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2020-00-16.csv
+        target_file_name: berlin-lor-housing-stock-2020-00-16-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2020-00-17.csv
+        target_file_name: berlin-lor-housing-stock-2020-00-17-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2020-00-18.csv
+        target_file_name: berlin-lor-housing-stock-2020-00-18-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+  - id: berlin-lor-housing-stock-2021-00
+    files:
+      - source_file_name: berlin-lor-housing-stock-2021-00-2.csv
+        target_file_name: berlin-lor-housing-stock-2021-00-2-districts.csv
+        names:
+          - name: id
+            action: "mapping"
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichsh.-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenb.-Wilmersd.": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelh.-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendorf": "12"
+          - { name: district_name, action: "remove" }
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_or_more_rooms
+          - name: rooms
+          - name: apartments_living_area
+          - name: non_residential_building_apartments
+          - name: non_residential_building_living_area
+      - source_file_name: berlin-lor-housing-stock-2021-00-4.csv
+        target_file_name: berlin-lor-housing-stock-2021-00-4-districts.csv
+        names:
+          - name: id
+            action: "mapping"
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichsh.-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenb.-Wilmersd.": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelh.-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendorf": "12"
+          - { name: district_name, action: "remove" }
+          - name: apartments
+          - name: rooms
+          - name: rooms_per_apartment
+          - name: living_area
+          - name: living_area_per_apartment
+      - source_file_name: berlin-lor-housing-stock-2021-00-6.csv
+        target_file_name: berlin-lor-housing-stock-2021-00-6-districts.csv
+        names:
+          - name: id
+            action: "mapping"
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichsh.-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenb.-Wilmersd.": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelh.-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendorf": "12"
+          - { name: district_name, action: "remove" }
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+          - name: dormitories
+          - name: dormitories_living_area
+          - name: dormitories_apartments
+      - source_file_name: berlin-lor-housing-stock-2021-00-7.csv
+        target_file_name: berlin-lor-housing-stock-2021-00-7-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2021-00-8.csv
+        target_file_name: berlin-lor-housing-stock-2021-00-8-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2021-00-9.csv
+        target_file_name: berlin-lor-housing-stock-2021-00-9-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2021-00-10.csv
+        target_file_name: berlin-lor-housing-stock-2021-00-10-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2021-00-11.csv
+        target_file_name: berlin-lor-housing-stock-2021-00-11-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2021-00-12.csv
+        target_file_name: berlin-lor-housing-stock-2021-00-12-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2021-00-13.csv
+        target_file_name: berlin-lor-housing-stock-2021-00-13-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2021-00-14.csv
+        target_file_name: berlin-lor-housing-stock-2021-00-14-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2021-00-15.csv
+        target_file_name: berlin-lor-housing-stock-2021-00-15-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2021-00-16.csv
+        target_file_name: berlin-lor-housing-stock-2021-00-16-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2021-00-17.csv
+        target_file_name: berlin-lor-housing-stock-2021-00-17-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2021-00-18.csv
+        target_file_name: berlin-lor-housing-stock-2021-00-18-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+  - id: berlin-lor-housing-stock-2022-00
+    files:
+      - source_file_name: berlin-lor-housing-stock-2022-00-2.csv
+        target_file_name: berlin-lor-housing-stock-2022-00-2-districts.csv
+        names:
+          - name: id
+            action: "mapping"
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichsh.-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenb.-Wilmersd.": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelh.-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendorf": "12"
+          - { name: district_name, action: "remove" }
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_or_more_rooms
+          - name: rooms
+          - name: apartments_living_area
+          - name: non_residential_building_apartments
+          - name: non_residential_building_living_area
+      - source_file_name: berlin-lor-housing-stock-2022-00-4.csv
+        target_file_name: berlin-lor-housing-stock-2022-00-4-districts.csv
+        names:
+          - name: id
+            action: "mapping"
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichsh.-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenb.-Wilmersd.": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelh.-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendorf": "12"
+          - { name: district_name, action: "remove" }
+          - name: apartments
+          - name: rooms
+          - name: rooms_per_apartment
+          - name: living_area
+          - name: living_area_per_apartment
+      - source_file_name: berlin-lor-housing-stock-2022-00-6.csv
+        target_file_name: berlin-lor-housing-stock-2022-00-6-districts.csv
+        names:
+          - name: id
+            action: "mapping"
+            key: "district_name"
+            mapping:
+              "Mitte": "01"
+              "Friedrichsh.-Kreuzberg": "02"
+              "Pankow": "03"
+              "Charlottenb.-Wilmersd.": "04"
+              "Spandau": "05"
+              "Steglitz-Zehlendorf": "06"
+              "Tempelh.-Schöneberg": "07"
+              "Neukölln": "08"
+              "Treptow-Köpenick": "09"
+              "Marzahn-Hellersdorf": "10"
+              "Lichtenberg": "11"
+              "Reinickendorf": "12"
+          - { name: district_name, action: "remove" }
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+          - name: dormitories
+          - name: dormitories_living_area
+          - name: dormitories_apartments
+      - source_file_name: berlin-lor-housing-stock-2022-00-7.csv
+        target_file_name: berlin-lor-housing-stock-2022-00-7-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2022-00-8.csv
+        target_file_name: berlin-lor-housing-stock-2022-00-8-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2022-00-9.csv
+        target_file_name: berlin-lor-housing-stock-2022-00-9-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2022-00-10.csv
+        target_file_name: berlin-lor-housing-stock-2022-00-10-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2022-00-11.csv
+        target_file_name: berlin-lor-housing-stock-2022-00-11-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2022-00-12.csv
+        target_file_name: berlin-lor-housing-stock-2022-00-12-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2022-00-13.csv
+        target_file_name: berlin-lor-housing-stock-2022-00-13-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2022-00-14.csv
+        target_file_name: berlin-lor-housing-stock-2022-00-14-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2022-00-15.csv
+        target_file_name: berlin-lor-housing-stock-2022-00-15-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2022-00-16.csv
+        target_file_name: berlin-lor-housing-stock-2022-00-16-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2022-00-17.csv
+        target_file_name: berlin-lor-housing-stock-2022-00-17-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
+      - source_file_name: berlin-lor-housing-stock-2022-00-18.csv
+        target_file_name: berlin-lor-housing-stock-2022-00-18-planning-areas.csv
+        names:
+          - name: id
+          - { name: planning_area_name, action: "remove" }
+          - name: inhabitants
+          - name: apartments
+          - name: apartments_with_1_room
+          - name: apartments_with_2_rooms
+          - name: apartments_with_3_rooms
+          - name: apartments_with_4_rooms
+          - name: apartments_with_5_rooms
+          - name: apartments_with_6_rooms
+          - name: apartments_with_7_or_more_apartments
+          - name: apartments_with_7_rooms_or_more
+          - name: apartments_rooms
+          - name: apartments_living_area
+          - name: residential_buildings
+          - name: residential_buildings_living_area
+          - name: residential_buildings_apartments
+          - name: residential_buildings_with_1_apartment
+          - name: residential_buildings_with_1_apartment_living_area
+          - name: residential_buildings_with_2_apartments
+          - name: residential_buildings_with_2_apartments_living_area
+          - name: residential_buildings_with_2_apartments_apartments
+          - name: residential_buildings_with_3_apartments
+          - name: residential_buildings_with_3_apartments_living_area
+          - name: residential_buildings_with_3_apartments_apartments
