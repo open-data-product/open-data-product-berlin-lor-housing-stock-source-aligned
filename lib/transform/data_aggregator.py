@@ -66,16 +66,12 @@ def aggregate_data(
                             dataframe.insert(0, "id", dataframe.pop("id"))
 
                     # Apply zfill
-                    dataframe = (
-                        dataframe
-                        .astype(str)
-                        .apply(
-                            lambda col: col.str.zfill(
-                                next(
-                                    name.zfill if name.zfill is not None else 0
-                                    for name in names
-                                    if name.name == col.name
-                                )
+                    dataframe = dataframe.astype(str).apply(
+                        lambda col: col.str.zfill(
+                            next(
+                                name.zfill if name.zfill is not None else 0
+                                for name in names
+                                if name.name == col.name
                             )
                         )
                     )
@@ -106,14 +102,18 @@ def aggregate_data(
 
                     # Apply mapping
                     for name in [
-                        name for name in names if name.action == "mapping" and name.mapping is not None
+                        name
+                        for name in names
+                        if name.action == "mapping" and name.mapping is not None
                     ]:
                         dataframe[name.name] = dataframe[name.key].map(name.mapping)
                         dataframe.insert(0, name.name, dataframe.pop(name.name))
 
                     # Apply filter
                     dataframe = dataframe.filter(
-                        items=[name.name for name in names if not name.action == "remove"]
+                        items=[
+                            name.name for name in names if not name.action == "remove"
+                        ]
                     )
 
                     os.makedirs(os.path.dirname(target_file_path), exist_ok=True)
