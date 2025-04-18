@@ -99,6 +99,17 @@
 
 * [SB_F01-01-00_2022j01_BE.xlsx](https://download.statistik-berlin-brandenburg.de/fc2a6d8be1b10993/3ed7d165d79a/SB_F01-01-00_2022j01_BE.xlsx)
 
+### Fortschreibung des Wohngebäude- und Wohnungsbestandes in Berlin 2023
+
+* owner: Amt für Statistik Berlin-Brandenburg
+* url: https://www.statistik-berlin-brandenburg.de/f-i-1-j
+* license: CC-BY-3.0-Namensnennung
+* updated: 2024-06-19
+
+**Files**
+
+* [SB_F01-01-00_2023j01_BE.xlsx](https://download.statistik-berlin-brandenburg.de/08570921ab238985/ab0a7e58bc60/SB_F01-01-00_2023j01_BE.xlsx)
+
 ## Output Ports
 
 ### Berlin Lor Housing Stock 2015 00
@@ -325,6 +336,34 @@
 * [berlin-lor-housing-stock-2022-00-8.csv](https://raw.githubusercontent.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/02-silver/berlin-lor-housing-stock-2022-00/berlin-lor-housing-stock-2022-00-8.csv)
 * [berlin-lor-housing-stock-2022-00-9.csv](https://raw.githubusercontent.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/02-silver/berlin-lor-housing-stock-2022-00/berlin-lor-housing-stock-2022-00-9.csv)
 
+### Berlin Lor Housing Stock 2023 00
+
+* owner: Open Data Product
+* url: https://github.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/tree/main/data/02-silver/berlin-lor-housing-stock-2023-00
+* license: CC-BY 4.0
+* updated: 2025-06-07
+
+**Files**
+
+* [berlin-lor-housing-stock-2023-00-1.csv](https://raw.githubusercontent.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/02-silver/berlin-lor-housing-stock-2023-00/berlin-lor-housing-stock-2023-00-1.csv)
+* [berlin-lor-housing-stock-2023-00-10.csv](https://raw.githubusercontent.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/02-silver/berlin-lor-housing-stock-2023-00/berlin-lor-housing-stock-2023-00-10.csv)
+* [berlin-lor-housing-stock-2023-00-11.csv](https://raw.githubusercontent.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/02-silver/berlin-lor-housing-stock-2023-00/berlin-lor-housing-stock-2023-00-11.csv)
+* [berlin-lor-housing-stock-2023-00-12.csv](https://raw.githubusercontent.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/02-silver/berlin-lor-housing-stock-2023-00/berlin-lor-housing-stock-2023-00-12.csv)
+* [berlin-lor-housing-stock-2023-00-13.csv](https://raw.githubusercontent.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/02-silver/berlin-lor-housing-stock-2023-00/berlin-lor-housing-stock-2023-00-13.csv)
+* [berlin-lor-housing-stock-2023-00-14.csv](https://raw.githubusercontent.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/02-silver/berlin-lor-housing-stock-2023-00/berlin-lor-housing-stock-2023-00-14.csv)
+* [berlin-lor-housing-stock-2023-00-15.csv](https://raw.githubusercontent.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/02-silver/berlin-lor-housing-stock-2023-00/berlin-lor-housing-stock-2023-00-15.csv)
+* [berlin-lor-housing-stock-2023-00-16.csv](https://raw.githubusercontent.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/02-silver/berlin-lor-housing-stock-2023-00/berlin-lor-housing-stock-2023-00-16.csv)
+* [berlin-lor-housing-stock-2023-00-17.csv](https://raw.githubusercontent.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/02-silver/berlin-lor-housing-stock-2023-00/berlin-lor-housing-stock-2023-00-17.csv)
+* [berlin-lor-housing-stock-2023-00-18.csv](https://raw.githubusercontent.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/02-silver/berlin-lor-housing-stock-2023-00/berlin-lor-housing-stock-2023-00-18.csv)
+* [berlin-lor-housing-stock-2023-00-2.csv](https://raw.githubusercontent.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/02-silver/berlin-lor-housing-stock-2023-00/berlin-lor-housing-stock-2023-00-2.csv)
+* [berlin-lor-housing-stock-2023-00-3.csv](https://raw.githubusercontent.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/02-silver/berlin-lor-housing-stock-2023-00/berlin-lor-housing-stock-2023-00-3.csv)
+* [berlin-lor-housing-stock-2023-00-4.csv](https://raw.githubusercontent.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/02-silver/berlin-lor-housing-stock-2023-00/berlin-lor-housing-stock-2023-00-4.csv)
+* [berlin-lor-housing-stock-2023-00-5.csv](https://raw.githubusercontent.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/02-silver/berlin-lor-housing-stock-2023-00/berlin-lor-housing-stock-2023-00-5.csv)
+* [berlin-lor-housing-stock-2023-00-6.csv](https://raw.githubusercontent.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/02-silver/berlin-lor-housing-stock-2023-00/berlin-lor-housing-stock-2023-00-6.csv)
+* [berlin-lor-housing-stock-2023-00-7.csv](https://raw.githubusercontent.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/02-silver/berlin-lor-housing-stock-2023-00/berlin-lor-housing-stock-2023-00-7.csv)
+* [berlin-lor-housing-stock-2023-00-8.csv](https://raw.githubusercontent.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/02-silver/berlin-lor-housing-stock-2023-00/berlin-lor-housing-stock-2023-00-8.csv)
+* [berlin-lor-housing-stock-2023-00-9.csv](https://raw.githubusercontent.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/02-silver/berlin-lor-housing-stock-2023-00/berlin-lor-housing-stock-2023-00-9.csv)
+
 ### Berlin Lor Housing Stock 2015 00
 
 * owner: Open Data Product
@@ -524,6 +563,31 @@
 * [berlin-lor-housing-stock-2022-00-7-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/03-gold/berlin-lor-housing-stock-2022-00/berlin-lor-housing-stock-2022-00-7-planning-areas.csv)
 * [berlin-lor-housing-stock-2022-00-8-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/03-gold/berlin-lor-housing-stock-2022-00/berlin-lor-housing-stock-2022-00-8-planning-areas.csv)
 * [berlin-lor-housing-stock-2022-00-9-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/03-gold/berlin-lor-housing-stock-2022-00/berlin-lor-housing-stock-2022-00-9-planning-areas.csv)
+
+### Berlin Lor Housing Stock 2023 00
+
+* owner: Open Data Product
+* url: https://github.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/tree/main/data/03-gold/berlin-lor-housing-stock-2023-00
+* license: CC-BY 4.0
+* updated: 2025-06-07
+
+**Files**
+
+* [berlin-lor-housing-stock-2023-00-10-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/03-gold/berlin-lor-housing-stock-2023-00/berlin-lor-housing-stock-2023-00-10-planning-areas.csv)
+* [berlin-lor-housing-stock-2023-00-11-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/03-gold/berlin-lor-housing-stock-2023-00/berlin-lor-housing-stock-2023-00-11-planning-areas.csv)
+* [berlin-lor-housing-stock-2023-00-12-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/03-gold/berlin-lor-housing-stock-2023-00/berlin-lor-housing-stock-2023-00-12-planning-areas.csv)
+* [berlin-lor-housing-stock-2023-00-13-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/03-gold/berlin-lor-housing-stock-2023-00/berlin-lor-housing-stock-2023-00-13-planning-areas.csv)
+* [berlin-lor-housing-stock-2023-00-14-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/03-gold/berlin-lor-housing-stock-2023-00/berlin-lor-housing-stock-2023-00-14-planning-areas.csv)
+* [berlin-lor-housing-stock-2023-00-15-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/03-gold/berlin-lor-housing-stock-2023-00/berlin-lor-housing-stock-2023-00-15-planning-areas.csv)
+* [berlin-lor-housing-stock-2023-00-16-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/03-gold/berlin-lor-housing-stock-2023-00/berlin-lor-housing-stock-2023-00-16-planning-areas.csv)
+* [berlin-lor-housing-stock-2023-00-17-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/03-gold/berlin-lor-housing-stock-2023-00/berlin-lor-housing-stock-2023-00-17-planning-areas.csv)
+* [berlin-lor-housing-stock-2023-00-18-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/03-gold/berlin-lor-housing-stock-2023-00/berlin-lor-housing-stock-2023-00-18-planning-areas.csv)
+* [berlin-lor-housing-stock-2023-00-2-districts.csv](https://raw.githubusercontent.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/03-gold/berlin-lor-housing-stock-2023-00/berlin-lor-housing-stock-2023-00-2-districts.csv)
+* [berlin-lor-housing-stock-2023-00-4-districts.csv](https://raw.githubusercontent.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/03-gold/berlin-lor-housing-stock-2023-00/berlin-lor-housing-stock-2023-00-4-districts.csv)
+* [berlin-lor-housing-stock-2023-00-6-districts.csv](https://raw.githubusercontent.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/03-gold/berlin-lor-housing-stock-2023-00/berlin-lor-housing-stock-2023-00-6-districts.csv)
+* [berlin-lor-housing-stock-2023-00-7-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/03-gold/berlin-lor-housing-stock-2023-00/berlin-lor-housing-stock-2023-00-7-planning-areas.csv)
+* [berlin-lor-housing-stock-2023-00-8-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/03-gold/berlin-lor-housing-stock-2023-00/berlin-lor-housing-stock-2023-00-8-planning-areas.csv)
+* [berlin-lor-housing-stock-2023-00-9-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-lifeworlds-data-product-berlin-lor-housing-stock-source-aligned/main/data/03-gold/berlin-lor-housing-stock-2023-00/berlin-lor-housing-stock-2023-00-9-planning-areas.csv)
 
 ## Classification
 
