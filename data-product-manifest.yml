@@ -150,7 +150,19 @@ input_ports:
       schema: []
     files:
       - https://download.statistik-berlin-brandenburg.de/08570921ab238985/ab0a7e58bc60/SB_F01-01-00_2023j01_BE.xlsx
-transformation_steps: []
+transformation_steps:
+  - name: Data extractor
+    path: lib/extract/data_extractor.py
+    description: extracts data from inout ports
+  - name: Data copier
+    path: lib/transform/data_copier.py
+    description: copies and renames extracted data
+  - name: Data CSV converter
+    path: lib/transform/convert_data_to_csv.py
+    description: converts Excel files to CSV format
+  - name: Data aggregator
+    path: lib/transform/aggregate_data.py
+    description: aggregates data to be used as output ports
 output_ports:
   - id: berlin-lor-housing-stock-2015-00
     metadata:

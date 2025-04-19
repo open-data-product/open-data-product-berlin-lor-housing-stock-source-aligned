@@ -110,6 +110,13 @@
 
 * [SB_F01-01-00_2023j01_BE.xlsx](https://download.statistik-berlin-brandenburg.de/08570921ab238985/ab0a7e58bc60/SB_F01-01-00_2023j01_BE.xlsx)
 
+## Transformation Steps
+
+* [Data extractor](../lib/extract/data_extractor.py) extracts data from inout ports
+* [Data copier](../lib/transform/data_copier.py) copies and renames extracted data
+* [Data CSV converter](../lib/transform/convert_data_to_csv.py) converts Excel files to CSV format
+* [Data aggregator](../lib/transform/aggregate_data.py) aggregates data to be used as output ports
+
 ## Output Ports
 
 ### Berlin Lor Housing Stock 2015 00
