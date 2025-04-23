@@ -6,7 +6,6 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2015-00-2-districts.csv
         names:
           - name: id
-            action: "mapping"
             key: "district_name"
             mapping:
               "Mitte": "01"
@@ -21,7 +20,7 @@ input_ports:
               "Marzahn-Hellersdorf": "10"
               "Lichtenberg": "11"
               "Reinickendorf": "12"
-          - { name: district_name, action: "remove" }
+          - { name: district_name, remove: True }
           - name: apartments
           - name: apartments_with_1_room
           - name: apartments_with_2_rooms
@@ -39,7 +38,6 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2015-00-4-districts.csv
         names:
           - name: id
-            action: "mapping"
             key: "district_name"
             mapping:
               "Mitte": "01"
@@ -54,7 +52,7 @@ input_ports:
               "Marzahn-Hellersdorf": "10"
               "Lichtenberg": "11"
               "Reinickendorf": "12"
-          - { name: district_name, action: "remove" }
+          - { name: district_name, remove: True }
           - name: apartments
           - name: rooms
           - name: rooms_per_apartment
@@ -64,7 +62,6 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2015-00-6-districts.csv
         names:
           - name: id
-            action: "mapping"
             key: "district_name"
             mapping:
               "Mitte": "01"
@@ -79,7 +76,7 @@ input_ports:
               "Marzahn-Hellersdorf": "10"
               "Lichtenberg": "11"
               "Reinickendorf": "12"
-          - { name: district_name, action: "remove" }
+          - { name: district_name, remove: True }
           - name: residential_buildings
           - name: residential_buildings_living_area
           - name: residential_buildings_apartments
@@ -98,7 +95,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2015-00-7-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -126,7 +123,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2015-00-8-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -154,7 +151,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2015-00-9-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -182,7 +179,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2015-00-10-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -210,7 +207,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2015-00-11-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -238,7 +235,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2015-00-12-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -266,7 +263,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2015-00-13-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -294,7 +291,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2015-00-14-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -322,7 +319,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2015-00-15-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -350,7 +347,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2015-00-16-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -378,7 +375,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2015-00-17-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -406,7 +403,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2015-00-18-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -436,7 +433,6 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2016-00-2-districts.csv
         names:
           - name: id
-            action: "mapping"
             key: "district_name"
             mapping:
               "Mitte": "01"
@@ -451,7 +447,7 @@ input_ports:
               "Marzahn-Hellersdorf": "10"
               "Lichtenberg": "11"
               "Reinickendorf": "12"
-          - { name: district_name, action: "remove" }
+          - { name: district_name, remove: True }
           - name: apartments
           - name: apartments_with_1_room
           - name: apartments_with_2_rooms
@@ -469,7 +465,6 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2016-00-4-districts.csv
         names:
           - name: id
-            action: "mapping"
             key: "district_name"
             mapping:
               "Mitte": "01"
@@ -484,7 +479,7 @@ input_ports:
               "Marzahn-Hellersdorf": "10"
               "Lichtenberg": "11"
               "Reinickendorf": "12"
-          - { name: district_name, action: "remove" }
+          - { name: district_name, remove: True }
           - name: apartments
           - name: rooms
           - name: rooms_per_apartment
@@ -494,7 +489,6 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2016-00-6-districts.csv
         names:
           - name: id
-            action: "mapping"
             key: "district_name"
             mapping:
               "Mitte": "01"
@@ -509,7 +503,7 @@ input_ports:
               "Marzahn-Hellersdorf": "10"
               "Lichtenberg": "11"
               "Reinickendorf": "12"
-          - { name: district_name, action: "remove" }
+          - { name: district_name, remove: True }
           - name: residential_buildings
           - name: residential_buildings_living_area
           - name: residential_buildings_apartments
@@ -528,7 +522,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2016-00-7-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -556,7 +550,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2016-00-8-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -584,7 +578,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2016-00-9-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -612,7 +606,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2016-00-10-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -640,7 +634,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2016-00-11-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -668,7 +662,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2016-00-12-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -696,7 +690,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2016-00-13-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -724,7 +718,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2016-00-14-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -752,7 +746,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2016-00-15-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -780,7 +774,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2016-00-16-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -808,7 +802,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2016-00-17-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -836,7 +830,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2016-00-18-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -866,7 +860,6 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2017-00-2-districts.csv
         names:
           - name: id
-            action: "mapping"
             key: "district_name"
             mapping:
               "Mitte": "01"
@@ -881,7 +874,7 @@ input_ports:
               "Marzahn-Hellersdorf": "10"
               "Lichtenberg": "11"
               "Reinickendorf": "12"
-          - { name: district_name, action: "remove" }
+          - { name: district_name, remove: True }
           - name: apartments
           - name: apartments_with_1_room
           - name: apartments_with_2_rooms
@@ -899,7 +892,6 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2017-00-4-districts.csv
         names:
           - name: id
-            action: "mapping"
             key: "district_name"
             mapping:
               "Mitte": "01"
@@ -914,7 +906,7 @@ input_ports:
               "Marzahn-Hellersdorf": "10"
               "Lichtenberg": "11"
               "Reinickendorf": "12"
-          - { name: district_name, action: "remove" }
+          - { name: district_name, remove: True }
           - name: apartments
           - name: rooms
           - name: rooms_per_apartment
@@ -924,7 +916,6 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2017-00-6-districts.csv
         names:
           - name: id
-            action: "mapping"
             key: "district_name"
             mapping:
               "Mitte": "01"
@@ -939,7 +930,7 @@ input_ports:
               "Marzahn-Hellersdorf": "10"
               "Lichtenberg": "11"
               "Reinickendorf": "12"
-          - { name: district_name, action: "remove" }
+          - { name: district_name, remove: True }
           - name: residential_buildings
           - name: residential_buildings_living_area
           - name: residential_buildings_apartments
@@ -958,7 +949,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2017-00-7-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -986,7 +977,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2017-00-8-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -1014,7 +1005,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2017-00-9-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -1042,7 +1033,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2017-00-10-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -1070,7 +1061,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2017-00-11-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -1098,7 +1089,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2017-00-12-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -1126,7 +1117,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2017-00-13-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -1154,7 +1145,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2017-00-14-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -1182,7 +1173,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2017-00-15-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -1210,7 +1201,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2017-00-16-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -1238,7 +1229,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2017-00-17-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -1266,7 +1257,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2017-00-18-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -1296,7 +1287,6 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2018-00-2-districts.csv
         names:
           - name: id
-            action: "mapping"
             key: "district_name"
             mapping:
               "Mitte": "01"
@@ -1311,7 +1301,7 @@ input_ports:
               "Marzahn-Hellersdorf": "10"
               "Lichtenberg": "11"
               "Reinickendorf": "12"
-          - { name: district_name, action: "remove" }
+          - { name: district_name, remove: True }
           - name: apartments
           - name: apartments_with_1_room
           - name: apartments_with_2_rooms
@@ -1329,7 +1319,6 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2018-00-4-districts.csv
         names:
           - name: id
-            action: "mapping"
             key: "district_name"
             mapping:
               "Mitte": "01"
@@ -1344,7 +1333,7 @@ input_ports:
               "Marzahn-Hellersdorf": "10"
               "Lichtenberg": "11"
               "Reinickendorf": "12"
-          - { name: district_name, action: "remove" }
+          - { name: district_name, remove: True }
           - name: apartments
           - name: rooms
           - name: rooms_per_apartment
@@ -1354,7 +1343,6 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2018-00-6-districts.csv
         names:
           - name: id
-            action: "mapping"
             key: "district_name"
             mapping:
               "Mitte": "01"
@@ -1369,7 +1357,7 @@ input_ports:
               "Marzahn-Hellersdorf": "10"
               "Lichtenberg": "11"
               "Reinickendorf": "12"
-          - { name: district_name, action: "remove" }
+          - { name: district_name, remove: True }
           - name: residential_buildings
           - name: residential_buildings_living_area
           - name: residential_buildings_apartments
@@ -1388,7 +1376,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2018-00-7-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -1416,7 +1404,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2018-00-8-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -1444,7 +1432,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2018-00-9-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -1472,7 +1460,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2018-00-10-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -1500,7 +1488,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2018-00-11-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -1528,7 +1516,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2018-00-12-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -1556,7 +1544,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2018-00-13-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -1584,7 +1572,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2018-00-14-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -1612,7 +1600,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2018-00-15-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -1640,7 +1628,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2018-00-16-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -1668,7 +1656,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2018-00-17-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -1696,7 +1684,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2018-00-18-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -1726,7 +1714,6 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2019-00-2-districts.csv
         names:
           - name: id
-            action: "mapping"
             key: "district_name"
             mapping:
               "Mitte": "01"
@@ -1741,7 +1728,7 @@ input_ports:
               "Marzahn-Hellersdorf": "10"
               "Lichtenberg": "11"
               "Reinickendorf": "12"
-          - { name: district_name, action: "remove" }
+          - { name: district_name, remove: True }
           - name: apartments
           - name: apartments_with_1_room
           - name: apartments_with_2_rooms
@@ -1759,7 +1746,6 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2019-00-4-districts.csv
         names:
           - name: id
-            action: "mapping"
             key: "district_name"
             mapping:
               "Mitte": "01"
@@ -1774,7 +1760,7 @@ input_ports:
               "Marzahn-Hellersdorf": "10"
               "Lichtenberg": "11"
               "Reinickendorf": "12"
-          - { name: district_name, action: "remove" }
+          - { name: district_name, remove: True }
           - name: apartments
           - name: rooms
           - name: rooms_per_apartment
@@ -1784,7 +1770,6 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2019-00-6-districts.csv
         names:
           - name: id
-            action: "mapping"
             key: "district_name"
             mapping:
               "Mitte": "01"
@@ -1799,7 +1784,7 @@ input_ports:
               "Marzahn-Hellersdorf": "10"
               "Lichtenberg": "11"
               "Reinickendorf": "12"
-          - { name: district_name, action: "remove" }
+          - { name: district_name, remove: True }
           - name: residential_buildings
           - name: residential_buildings_living_area
           - name: residential_buildings_apartments
@@ -1818,7 +1803,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2019-00-7-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -1846,7 +1831,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2019-00-8-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -1874,7 +1859,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2019-00-9-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -1902,7 +1887,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2019-00-10-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -1930,7 +1915,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2019-00-11-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -1958,7 +1943,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2019-00-12-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -1986,7 +1971,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2019-00-13-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -2014,7 +1999,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2019-00-14-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -2042,7 +2027,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2019-00-15-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -2070,7 +2055,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2019-00-16-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -2098,7 +2083,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2019-00-17-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -2126,7 +2111,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2019-00-18-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -2156,7 +2141,6 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2020-00-2-districts.csv
         names:
           - name: id
-            action: "mapping"
             key: "district_name"
             mapping:
               "Mitte": "01"
@@ -2171,7 +2155,7 @@ input_ports:
               "Marzahn-Hellersdorf": "10"
               "Lichtenberg": "11"
               "Reinickendorf": "12"
-          - { name: district_name, action: "remove" }
+          - { name: district_name, remove: True }
           - name: apartments
           - name: apartments_with_1_room
           - name: apartments_with_2_rooms
@@ -2189,7 +2173,6 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2020-00-4-districts.csv
         names:
           - name: id
-            action: "mapping"
             key: "district_name"
             mapping:
               "Mitte": "01"
@@ -2204,7 +2187,7 @@ input_ports:
               "Marzahn-Hellersdorf": "10"
               "Lichtenberg": "11"
               "Reinickendorf": "12"
-          - { name: district_name, action: "remove" }
+          - { name: district_name, remove: True }
           - name: apartments
           - name: rooms
           - name: rooms_per_apartment
@@ -2214,7 +2197,6 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2020-00-6-districts.csv
         names:
           - name: id
-            action: "mapping"
             key: "district_name"
             mapping:
               "Mitte": "01"
@@ -2229,7 +2211,7 @@ input_ports:
               "Marzahn-Hellersdorf": "10"
               "Lichtenberg": "11"
               "Reinickendorf": "12"
-          - { name: district_name, action: "remove" }
+          - { name: district_name, remove: True }
           - name: residential_buildings
           - name: residential_buildings_living_area
           - name: residential_buildings_apartments
@@ -2248,7 +2230,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2020-00-7-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -2276,7 +2258,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2020-00-8-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -2304,7 +2286,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2020-00-9-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -2332,7 +2314,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2020-00-10-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -2360,7 +2342,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2020-00-11-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -2388,7 +2370,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2020-00-12-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -2416,7 +2398,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2020-00-13-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -2444,7 +2426,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2020-00-14-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -2472,7 +2454,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2020-00-15-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -2500,7 +2482,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2020-00-16-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -2528,7 +2510,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2020-00-17-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -2556,7 +2538,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2020-00-18-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -2586,7 +2568,6 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2021-00-2-districts.csv
         names:
           - name: id
-            action: "mapping"
             key: "district_name"
             mapping:
               "Mitte": "01"
@@ -2601,7 +2582,7 @@ input_ports:
               "Marzahn-Hellersdorf": "10"
               "Lichtenberg": "11"
               "Reinickendorf": "12"
-          - { name: district_name, action: "remove" }
+          - { name: district_name, remove: True }
           - name: apartments
           - name: apartments_with_1_room
           - name: apartments_with_2_rooms
@@ -2619,7 +2600,6 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2021-00-4-districts.csv
         names:
           - name: id
-            action: "mapping"
             key: "district_name"
             mapping:
               "Mitte": "01"
@@ -2634,7 +2614,7 @@ input_ports:
               "Marzahn-Hellersdorf": "10"
               "Lichtenberg": "11"
               "Reinickendorf": "12"
-          - { name: district_name, action: "remove" }
+          - { name: district_name, remove: True }
           - name: apartments
           - name: rooms
           - name: rooms_per_apartment
@@ -2644,7 +2624,6 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2021-00-6-districts.csv
         names:
           - name: id
-            action: "mapping"
             key: "district_name"
             mapping:
               "Mitte": "01"
@@ -2659,7 +2638,7 @@ input_ports:
               "Marzahn-Hellersdorf": "10"
               "Lichtenberg": "11"
               "Reinickendorf": "12"
-          - { name: district_name, action: "remove" }
+          - { name: district_name, remove: True }
           - name: residential_buildings
           - name: residential_buildings_living_area
           - name: residential_buildings_apartments
@@ -2678,7 +2657,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2021-00-7-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -2706,7 +2685,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2021-00-8-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -2734,7 +2713,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2021-00-9-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -2762,7 +2741,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2021-00-10-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -2790,7 +2769,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2021-00-11-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -2818,7 +2797,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2021-00-12-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -2846,7 +2825,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2021-00-13-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -2874,7 +2853,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2021-00-14-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -2902,7 +2881,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2021-00-15-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -2930,7 +2909,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2021-00-16-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -2958,7 +2937,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2021-00-17-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -2986,7 +2965,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2021-00-18-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -3016,7 +2995,6 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2022-00-2-districts.csv
         names:
           - name: id
-            action: "mapping"
             key: "district_name"
             mapping:
               "Mitte": "01"
@@ -3031,7 +3009,7 @@ input_ports:
               "Marzahn-Hellersdorf": "10"
               "Lichtenberg": "11"
               "Reinickendorf": "12"
-          - { name: district_name, action: "remove" }
+          - { name: district_name, remove: True }
           - name: apartments
           - name: apartments_with_1_room
           - name: apartments_with_2_rooms
@@ -3049,7 +3027,6 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2022-00-4-districts.csv
         names:
           - name: id
-            action: "mapping"
             key: "district_name"
             mapping:
               "Mitte": "01"
@@ -3064,7 +3041,7 @@ input_ports:
               "Marzahn-Hellersdorf": "10"
               "Lichtenberg": "11"
               "Reinickendorf": "12"
-          - { name: district_name, action: "remove" }
+          - { name: district_name, remove: True }
           - name: apartments
           - name: rooms
           - name: rooms_per_apartment
@@ -3074,7 +3051,6 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2022-00-6-districts.csv
         names:
           - name: id
-            action: "mapping"
             key: "district_name"
             mapping:
               "Mitte": "01"
@@ -3089,7 +3065,7 @@ input_ports:
               "Marzahn-Hellersdorf": "10"
               "Lichtenberg": "11"
               "Reinickendorf": "12"
-          - { name: district_name, action: "remove" }
+          - { name: district_name, remove: True }
           - name: residential_buildings
           - name: residential_buildings_living_area
           - name: residential_buildings_apartments
@@ -3108,7 +3084,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2022-00-7-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -3136,7 +3112,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2022-00-8-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -3164,7 +3140,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2022-00-9-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -3192,7 +3168,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2022-00-10-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -3220,7 +3196,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2022-00-11-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -3248,7 +3224,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2022-00-12-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -3276,7 +3252,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2022-00-13-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -3304,7 +3280,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2022-00-14-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -3332,7 +3308,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2022-00-15-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -3360,7 +3336,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2022-00-16-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -3388,7 +3364,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2022-00-17-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -3416,7 +3392,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2022-00-18-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -3446,7 +3422,6 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2023-00-2-districts.csv
         names:
           - name: id
-            action: "mapping"
             key: "district_name"
             mapping:
               "Mitte": "01"
@@ -3461,7 +3436,7 @@ input_ports:
               "Marzahn-Hellersdorf": "10"
               "Lichtenberg": "11"
               "Reinickendorf": "12"
-          - { name: district_name, action: "remove" }
+          - { name: district_name, remove: True }
           - name: apartments
           - name: apartments_with_1_room
           - name: apartments_with_2_rooms
@@ -3479,7 +3454,6 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2023-00-4-districts.csv
         names:
           - name: id
-            action: "mapping"
             key: "district_name"
             mapping:
               "Mitte": "01"
@@ -3494,7 +3468,7 @@ input_ports:
               "Marzahn-Hellersdorf": "10"
               "Lichtenberg": "11"
               "Reinickendorf": "12"
-          - { name: district_name, action: "remove" }
+          - { name: district_name, remove: True }
           - name: apartments
           - name: rooms
           - name: rooms_per_apartment
@@ -3504,7 +3478,6 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2023-00-6-districts.csv
         names:
           - name: id
-            action: "mapping"
             key: "district_name"
             mapping:
               "Mitte": "01"
@@ -3519,7 +3492,7 @@ input_ports:
               "Marzahn-Hellersdorf": "10"
               "Lichtenberg": "11"
               "Reinickendorf": "12"
-          - { name: district_name, action: "remove" }
+          - { name: district_name, remove: True }
           - name: residential_buildings
           - name: residential_buildings_living_area
           - name: residential_buildings_apartments
@@ -3538,7 +3511,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2023-00-7-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -3566,7 +3539,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2023-00-8-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -3594,7 +3567,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2023-00-9-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -3622,7 +3595,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2023-00-10-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -3650,7 +3623,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2023-00-11-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -3678,7 +3651,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2023-00-12-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -3706,7 +3679,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2023-00-13-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -3734,7 +3707,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2023-00-14-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -3762,7 +3735,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2023-00-15-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -3790,7 +3763,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2023-00-16-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -3818,7 +3791,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2023-00-17-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
@@ -3846,7 +3819,7 @@ input_ports:
         target_file_name: berlin-lor-housing-stock-2023-00-18-planning-areas.csv
         names:
           - name: id
-          - { name: planning_area_name, action: "remove" }
+          - { name: planning_area_name, remove: True }
           - name: inhabitants
           - name: apartments
           - name: apartments_with_1_room
