@@ -3478,8 +3478,8 @@ input_ports:
               - { name: residential_buildings_with_3_apartments, type: int }
               - { name: residential_buildings_with_3_apartments_living_area, type: int }
               - { name: residential_buildings_with_3_apartments_apartments, type: int }
-            skip_rows: 11
-            head: 57
+            skip_rows: 10
+            head: 53
           - target_file_name: berlin-lor-housing-stock-2022-00-11.csv
             sheet_name: Tab. 11
             names:
@@ -3943,8 +3943,8 @@ input_ports:
               - { name: residential_buildings_with_3_apartments, type: int }
               - { name: residential_buildings_with_3_apartments_living_area, type: int }
               - { name: residential_buildings_with_3_apartments_apartments, type: int }
-            skip_rows: 11
-            head: 57
+            skip_rows: 10
+            head: 53
           - target_file_name: berlin-lor-housing-stock-2023-00-11.csv
             sheet_name: Tab. 11
             names:
