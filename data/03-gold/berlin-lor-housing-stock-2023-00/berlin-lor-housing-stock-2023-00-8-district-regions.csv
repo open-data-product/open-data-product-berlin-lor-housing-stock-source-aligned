@@ -1,0 +1,8 @@
+id,inhabitants,apartments,apartments_with_1_room,apartments_with_2_rooms,apartments_with_3_rooms,apartments_with_4_rooms,apartments_with_5_rooms,apartments_with_6_rooms,apartments_with_7_or_more_apartments,apartments_with_7_rooms_or_more,apartments_rooms,apartments_living_area,residential_buildings,residential_buildings_living_area,residential_buildings_apartments,residential_buildings_with_1_apartment,residential_buildings_with_1_apartment_living_area,residential_buildings_with_2_apartments,residential_buildings_with_2_apartments_living_area,residential_buildings_with_2_apartments_apartments,residential_buildings_with_3_apartments,residential_buildings_with_3_apartments_living_area,residential_buildings_with_3_apartments_apartments
+021001,15790,633,3971,5732,4007,1068,328,51.0,388.0,49495,10188,870,10020,15523,41,32,17.0,33.0,34.0,812,9956,15448,10500520
+022002,36090,2515,8138,12936,8502,2851,852,296.0,2236.0,113210,26097,2871,25508,35241,134,167,48.0,101.0,96.0,2689,25242,35011,15401470
+023003,10188,634,2468,3474,2509,873,169,61.0,483.0,31890,7041,817,6897,10017,24,28,8.0,12.0,16.0,785,6858,9977,6900945
+023004,14450,1036,3892,5029,3213,956,253,71.0,536.0,43593,9876,1111,9630,14158,8,9,9.0,19.0,18.0,1094,9601,14132,6901254
+024005,14053,557,2639,5417,3911,1363,133,33.0,256.0,45599,9303,787,9240,13959,30,37,5.0,5.0,10.0,752,9197,13919,7201563
+024006,14850,1395,3086,5758,3547,950,91,23.0,195.0,44520,9282,680,8664,13358,31,30,5.0,9.0,10.0,644,8627,13317,7201872
+025007,9134,453,2339,3636,2174,435,81,16.0,127.0,27523,6014,607,6011,9131,15,17,11.0,18.0,22.0,581,5975,9094,5001453
