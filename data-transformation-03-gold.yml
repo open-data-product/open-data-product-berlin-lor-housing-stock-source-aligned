@@ -1,5 +1,5 @@
 ---
-name_sets:
+attribute_groups:
   planning_area: &planning_area
     - name: id
     - { name: planning_area_name, remove: True }

@@ -6,7 +6,7 @@ metadata:
   description: Source-aligned data product providing Berlin LOR housing stock data
   url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned
   license: CC-BY 4.0
-  updated: 2025-07-06
+  updated: 2025-07-21
   schema:
     - name: apartments
       description: number of apartments
@@ -171,7 +171,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/tree/main/data/02-silver/berlin-lor-housing-stock-2015-00
       license: CC-BY 4.0
-      updated: 2025-07-06
+      updated: 2025-07-21
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/main/data/02-silver/berlin-lor-housing-stock-2015-00/berlin-lor-housing-stock-2015-00-1.csv
@@ -199,7 +199,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/tree/main/data/02-silver/berlin-lor-housing-stock-2016-00
       license: CC-BY 4.0
-      updated: 2025-07-06
+      updated: 2025-07-21
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/main/data/02-silver/berlin-lor-housing-stock-2016-00/berlin-lor-housing-stock-2016-00-1.csv
@@ -227,7 +227,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/tree/main/data/02-silver/berlin-lor-housing-stock-2017-00
       license: CC-BY 4.0
-      updated: 2025-07-06
+      updated: 2025-07-21
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/main/data/02-silver/berlin-lor-housing-stock-2017-00/berlin-lor-housing-stock-2017-00-1.csv
@@ -255,7 +255,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/tree/main/data/02-silver/berlin-lor-housing-stock-2018-00
       license: CC-BY 4.0
-      updated: 2025-07-06
+      updated: 2025-07-21
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/main/data/02-silver/berlin-lor-housing-stock-2018-00/berlin-lor-housing-stock-2018-00-1.csv
@@ -283,7 +283,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/tree/main/data/02-silver/berlin-lor-housing-stock-2019-00
       license: CC-BY 4.0
-      updated: 2025-07-06
+      updated: 2025-07-21
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/main/data/02-silver/berlin-lor-housing-stock-2019-00/berlin-lor-housing-stock-2019-00-1.csv
@@ -311,7 +311,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/tree/main/data/02-silver/berlin-lor-housing-stock-2020-00
       license: CC-BY 4.0
-      updated: 2025-07-06
+      updated: 2025-07-21
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/main/data/02-silver/berlin-lor-housing-stock-2020-00/berlin-lor-housing-stock-2020-00-1.csv
@@ -339,7 +339,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/tree/main/data/02-silver/berlin-lor-housing-stock-2021-00
       license: CC-BY 4.0
-      updated: 2025-07-06
+      updated: 2025-07-21
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/main/data/02-silver/berlin-lor-housing-stock-2021-00/berlin-lor-housing-stock-2021-00-1.csv
@@ -367,7 +367,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/tree/main/data/02-silver/berlin-lor-housing-stock-2022-00
       license: CC-BY 4.0
-      updated: 2025-07-06
+      updated: 2025-07-21
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/main/data/02-silver/berlin-lor-housing-stock-2022-00/berlin-lor-housing-stock-2022-00-1.csv
@@ -395,7 +395,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/tree/main/data/02-silver/berlin-lor-housing-stock-2023-00
       license: CC-BY 4.0
-      updated: 2025-07-06
+      updated: 2025-07-21
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/main/data/02-silver/berlin-lor-housing-stock-2023-00/berlin-lor-housing-stock-2023-00-1.csv
@@ -423,7 +423,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/tree/main/data/03-gold/berlin-lor-housing-stock-2015-00
       license: CC-BY 4.0
-      updated: 2025-07-06
+      updated: 2025-07-21
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/main/data/03-gold/berlin-lor-housing-stock-2015-00/berlin-lor-housing-stock-2015-00-10-district-regions.csv
@@ -481,7 +481,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/tree/main/data/03-gold/berlin-lor-housing-stock-2016-00
       license: CC-BY 4.0
-      updated: 2025-07-06
+      updated: 2025-07-21
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/main/data/03-gold/berlin-lor-housing-stock-2016-00/berlin-lor-housing-stock-2016-00-10-district-regions.csv
@@ -539,7 +539,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/tree/main/data/03-gold/berlin-lor-housing-stock-2017-00
       license: CC-BY 4.0
-      updated: 2025-07-06
+      updated: 2025-07-21
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/main/data/03-gold/berlin-lor-housing-stock-2017-00/berlin-lor-housing-stock-2017-00-10-district-regions.csv
@@ -597,7 +597,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/tree/main/data/03-gold/berlin-lor-housing-stock-2018-00
       license: CC-BY 4.0
-      updated: 2025-07-06
+      updated: 2025-07-21
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/main/data/03-gold/berlin-lor-housing-stock-2018-00/berlin-lor-housing-stock-2018-00-10-district-regions.csv
@@ -655,7 +655,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/tree/main/data/03-gold/berlin-lor-housing-stock-2019-00
       license: CC-BY 4.0
-      updated: 2025-07-06
+      updated: 2025-07-21
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/main/data/03-gold/berlin-lor-housing-stock-2019-00/berlin-lor-housing-stock-2019-00-10-district-regions.csv
@@ -713,7 +713,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/tree/main/data/03-gold/berlin-lor-housing-stock-2020-00
       license: CC-BY 4.0
-      updated: 2025-07-06
+      updated: 2025-07-21
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/main/data/03-gold/berlin-lor-housing-stock-2020-00/berlin-lor-housing-stock-2020-00-10-district-regions.csv
@@ -771,7 +771,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/tree/main/data/03-gold/berlin-lor-housing-stock-2021-00
       license: CC-BY 4.0
-      updated: 2025-07-06
+      updated: 2025-07-21
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/main/data/03-gold/berlin-lor-housing-stock-2021-00/berlin-lor-housing-stock-2021-00-10-district-regions.csv
@@ -829,7 +829,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/tree/main/data/03-gold/berlin-lor-housing-stock-2022-00
       license: CC-BY 4.0
-      updated: 2025-07-06
+      updated: 2025-07-21
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/main/data/03-gold/berlin-lor-housing-stock-2022-00/berlin-lor-housing-stock-2022-00-10-district-regions.csv
@@ -887,7 +887,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/tree/main/data/03-gold/berlin-lor-housing-stock-2023-00
       license: CC-BY 4.0
-      updated: 2025-07-06
+      updated: 2025-07-21
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/main/data/03-gold/berlin-lor-housing-stock-2023-00/berlin-lor-housing-stock-2023-00-10-district-regions.csv
