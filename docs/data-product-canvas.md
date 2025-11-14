@@ -7,7 +7,7 @@
 * description: Source-aligned data product providing Berlin LOR housing stock data
 * url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned
 * license: CC-BY 4.0
-* updated: 2025-10-27
+* updated: 2025-10-28
 
 ## Input Ports
 
@@ -124,7 +124,7 @@
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/tree/main/data/03-gold/berlin-lor-housing-stock-2015-00-csv
 * license: CC-BY 4.0
-* updated: 2025-10-27
+* updated: 2025-10-28
 
 **Files**
 
@@ -182,7 +182,7 @@
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/tree/main/data/03-gold/berlin-lor-housing-stock-2015-00-parquet
 * license: CC-BY 4.0
-* updated: 2025-10-27
+* updated: 2025-10-28
 
 **Files**
 
@@ -240,7 +240,7 @@
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/tree/main/data/03-gold/berlin-lor-housing-stock-2016-00-csv
 * license: CC-BY 4.0
-* updated: 2025-10-27
+* updated: 2025-10-28
 
 **Files**
 
@@ -298,7 +298,7 @@
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/tree/main/data/03-gold/berlin-lor-housing-stock-2016-00-parquet
 * license: CC-BY 4.0
-* updated: 2025-10-27
+* updated: 2025-10-28
 
 **Files**
 
@@ -356,7 +356,7 @@
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/tree/main/data/03-gold/berlin-lor-housing-stock-2017-00-csv
 * license: CC-BY 4.0
-* updated: 2025-10-27
+* updated: 2025-10-28
 
 **Files**
 
@@ -414,7 +414,7 @@
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/tree/main/data/03-gold/berlin-lor-housing-stock-2017-00-parquet
 * license: CC-BY 4.0
-* updated: 2025-10-27
+* updated: 2025-10-28
 
 **Files**
 
@@ -472,7 +472,7 @@
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/tree/main/data/03-gold/berlin-lor-housing-stock-2018-00-csv
 * license: CC-BY 4.0
-* updated: 2025-10-27
+* updated: 2025-10-28
 
 **Files**
 
@@ -530,7 +530,7 @@
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/tree/main/data/03-gold/berlin-lor-housing-stock-2018-00-parquet
 * license: CC-BY 4.0
-* updated: 2025-10-27
+* updated: 2025-10-28
 
 **Files**
 
@@ -588,7 +588,7 @@
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/tree/main/data/03-gold/berlin-lor-housing-stock-2019-00-csv
 * license: CC-BY 4.0
-* updated: 2025-10-27
+* updated: 2025-10-28
 
 **Files**
 
@@ -646,7 +646,7 @@
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/tree/main/data/03-gold/berlin-lor-housing-stock-2019-00-parquet
 * license: CC-BY 4.0
-* updated: 2025-10-27
+* updated: 2025-10-28
 
 **Files**
 
@@ -704,7 +704,7 @@
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/tree/main/data/03-gold/berlin-lor-housing-stock-2020-00-csv
 * license: CC-BY 4.0
-* updated: 2025-10-27
+* updated: 2025-10-28
 
 **Files**
 
@@ -762,7 +762,7 @@
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/tree/main/data/03-gold/berlin-lor-housing-stock-2020-00-parquet
 * license: CC-BY 4.0
-* updated: 2025-10-27
+* updated: 2025-10-28
 
 **Files**
 
@@ -820,7 +820,7 @@
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/tree/main/data/03-gold/berlin-lor-housing-stock-2021-00-csv
 * license: CC-BY 4.0
-* updated: 2025-10-27
+* updated: 2025-10-28
 
 **Files**
 
@@ -878,7 +878,7 @@
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/tree/main/data/03-gold/berlin-lor-housing-stock-2021-00-parquet
 * license: CC-BY 4.0
-* updated: 2025-10-27
+* updated: 2025-10-28
 
 **Files**
 
@@ -936,7 +936,7 @@
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/tree/main/data/03-gold/berlin-lor-housing-stock-2022-00-csv
 * license: CC-BY 4.0
-* updated: 2025-10-27
+* updated: 2025-10-28
 
 **Files**
 
@@ -994,7 +994,7 @@
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/tree/main/data/03-gold/berlin-lor-housing-stock-2022-00-parquet
 * license: CC-BY 4.0
-* updated: 2025-10-27
+* updated: 2025-10-28
 
 **Files**
 
@@ -1052,7 +1052,7 @@
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/tree/main/data/03-gold/berlin-lor-housing-stock-2023-00-csv
 * license: CC-BY 4.0
-* updated: 2025-10-27
+* updated: 2025-10-28
 
 **Files**
 
@@ -1110,7 +1110,7 @@
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-lor-housing-stock-source-aligned/tree/main/data/03-gold/berlin-lor-housing-stock-2023-00-parquet
 * license: CC-BY 4.0
-* updated: 2025-10-27
+* updated: 2025-10-28
 
 **Files**
 
